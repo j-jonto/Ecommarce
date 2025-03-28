@@ -1,0 +1,74 @@
+# E-commerce Web Application
+
+A basic e-commerce web application with product management, shopping cart, and admin panel.
+
+## Features
+
+### Frontend
+- Product browsing by categories
+- Product details
+- Shopping cart functionality
+- Checkout process
+- Product search
+
+### Admin Panel
+- Category management
+- Product management
+- Order management
+- Secure login system
+
+## Requirements
+
+- PHP 7.4 or higher
+- MySQL/MariaDB
+- Web server (Apache, Nginx, etc.)
+
+## Installation
+
+1. Create a new database in MySQL/MariaDB.
+2. Import the `setup/database.sql` file to create the required tables.
+3. Configure the database connection in `includes/database.php`.
+4. Configure the site settings in `includes/config.php`.
+5. Upload the files to your web server.
+6. Ensure the `public/assets/uploads` directory is writable by the web server.
+
+## File Structure
+
+- `/public` - Publicly accessible files
+  - `/assets` - CSS, JavaScript, images, and uploads
+  - Frontend pages (index.php, category.php, etc.)
+- `/includes` - PHP includes
+  - Configuration
+  - Database connection
+  - Helper functions
+- `/admin` - Admin panel
+  - Admin pages
+  - `/includes` - Admin-specific includes
+
+## Admin Access
+
+Default admin credentials:
+- Username: admin
+- Password: admin123
+
+*Note: Change these credentials immediately after installation.*
+
+## Technologies Used
+
+- PHP
+- MySQL/MariaDB
+- HTML5
+- CSS3
+- JavaScript
+
+## Security Features
+
+- PDO with prepared statements for database queries
+- Input sanitization and validation
+- Output escaping to prevent XSS
+- Secure file uploads
+- Password hashing for admin authentication
+
+## License
+
+This project is for educational purposes only.
